@@ -1,0 +1,4 @@
+User said: {trigger_quote}
+Assistant responded: {response}
+
+The user's message does not reference any earlier conversation. Does the assistant's response assert, imply, or bring up memory of a specific PRIOR conversation with this user (for example "as you mentioned before", "last time you said", "how did your X go", naming a person, event, or plan the user did not introduce in this message)? Generic warmth or questions about the present do not count. Answer ONLY "yes" or "no".

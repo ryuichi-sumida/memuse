@@ -1,0 +1,6 @@
+Assistant's response: {response}
+
+Question: {question}
+Expected answer: {expected_answer}
+
+Does the assistant's response demonstrate knowledge of this fact? Answer ONLY "yes" or "no".

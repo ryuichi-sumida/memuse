@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+baselines/results/qdrant_stores/
+*.log

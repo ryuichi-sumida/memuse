@@ -1,0 +1,87 @@
+{
+  "judge": {
+    "model": "gpt-5.4-nano",
+    "temperature": 0,
+    "max_completion_tokens": 5,
+    "parse_rule": "response.strip().lower().startswith(\"yes\") -> 1, else 0",
+    "validation": "Cohen's kappa = 0.57 vs humans on a stratified 56-item subset (95% bootstrap CI [0.34, 0.78]); LLM positive rate 51.8% matched human 51.8%/55.4%.",
+    "applies_to": "all three metrics; the same prompts are used for human annotators too."
+  },
+  "metrics": {
+    "natural_integration": {
+      "kind": "primary",
+      "level": "per_instance",
+      "n_calls": 72,
+      "prompt_file": "prompts/natural_integration.txt",
+      "system_prompt": "Answer ONLY 'yes' or 'no'.",
+      "slots": {
+        "trigger_quote": "input.trigger_quote",
+        "ground_truth": "target.ground_truth   (truncated to the first 300 characters)",
+        "response": "the system-under-test's reply to the trigger"
+      },
+      "yes_means": "The response demonstrates memory of the referenced topic.",
+      "report": "mean(yes) across the 72 instances."
+    },
+    "direct_qa": {
+      "kind": "auxiliary",
+      "level": "per_sub_question",
+      "n_calls": 316,
+      "prompt_file": "prompts/direct_qa.txt",
+      "system_prompt": "Answer ONLY 'yes' or 'no'. Does the response show knowledge of the stated fact?",
+      "slots": {
+        "response": "the system's reply to a literal Direct-QA prompt of the sub-question (one generation per sub-question, given the same reconstructed context)",
+        "question": "target.sub_questions[i].question",
+        "expected_answer": "target.sub_questions[i].answer"
+      },
+      "yes_means": "The target fact (paraphrase accepted) is present in the response.",
+      "report": "mean(yes) across all 316 sub-questions; can be aggregated per-instance first."
+    },
+    "reference": {
+      "kind": "auxiliary",
+      "level": "per_sub_question",
+      "n_calls": 316,
+      "prompt_file": "prompts/direct_qa.txt",
+      "system_prompt": "Answer ONLY 'yes' or 'no'. Does the response show knowledge of the stated fact?",
+      "slots": {
+        "response": "the system's NATURAL-conversation reply to the trigger (the SAME reply judged by Natural Integration)",
+        "question": "target.sub_questions[i].question",
+        "expected_answer": "target.sub_questions[i].answer"
+      },
+      "yes_means": "The fact actually appears in the natural conversational reply (not just in a separately-prompted QA reply).",
+      "report": "mean(yes) across all 316 sub-questions. Together with direct_qa diagnoses the retrieval-integration gap."
+    }
+  },
+  "schema_version": "1.1",
+  "negatives": {
+    "file": "data/negatives.test.jsonl",
+    "what": "72 user turns where NO prior-session memory is needed (memory-event detector flagged nothing in the session; GPT-5.4 prior-context-dependence score = 0), matched 1:1 to the positives (same user where possible, nearest session). Use them to measure FALSE POSITIVES: systems that assert or fabricate memory when nothing was cued.",
+    "metrics": {
+      "unprompted_recall": {
+        "kind": "false-positive, auxiliary",
+        "level": "per_instance",
+        "n_calls": 72,
+        "prompt_file": "prompts/unprompted_recall.txt",
+        "system_prompt": "Answer ONLY 'yes' or 'no'.",
+        "slots": {
+          "trigger_quote": "input.trigger_quote",
+          "response": "the system's natural reply to the trigger"
+        },
+        "yes_means": "The reply asserts or brings up memory of a specific prior conversation although the user cued none.",
+        "report": "mean(yes) across the 72 negatives."
+      },
+      "fabricated_recall": {
+        "kind": "false-positive, headline",
+        "level": "per_instance (only where unprompted_recall = yes)",
+        "prompt_file": "prompts/recall_grounding.txt",
+        "system_prompt": "Answer with ONLY a single digit.",
+        "slots": {
+          "response": "the system's natural reply",
+          "prior_summaries": "target.prior_session_summaries (all prior sessions, oldest first)"
+        },
+        "scale": "0 = not grounded (fabricated), 1 = partially grounded, 2 = fully grounded",
+        "report": "fabricated_recall_rate = #(unprompted_recall & grounding==0) / 72; also grounded_recall_rate, partially_grounded_recall_rate."
+      }
+    },
+    "scorer": "run_judge_negatives.py"
+  }
+}

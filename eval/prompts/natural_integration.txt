@@ -1,0 +1,5 @@
+User said: {trigger_quote}
+Expected: {ground_truth}
+Assistant responded: {response}
+
+Does the response demonstrate memory of the referenced topic? Answer ONLY "yes" or "no".
