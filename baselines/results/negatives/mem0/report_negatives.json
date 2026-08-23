@@ -1,0 +1,300 @@
+{
+  "summary": {
+    "n_instances_scored": 72,
+    "unprompted_recall_rate": 0.0,
+    "fabricated_recall_rate": 0.0,
+    "partially_grounded_recall_rate": 0.0,
+    "grounded_recall_rate": 0.0,
+    "judge_model": "gpt-5.4-nano"
+  },
+  "per_instance": {
+    "neg_001": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_002": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_003": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_004": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_005": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_006": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_007": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_008": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_009": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_010": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_011": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_012": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_013": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_014": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_015": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_016": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_017": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_018": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_019": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_020": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_021": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_022": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_023": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_024": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_025": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_026": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_027": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_028": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_029": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_030": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_031": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_032": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_033": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_034": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_035": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_036": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_037": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_038": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_039": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_040": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_041": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_042": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_043": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_044": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_045": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_046": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_047": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_048": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_049": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_050": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_051": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_052": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_053": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_054": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_055": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_056": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_057": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_058": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_059": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_060": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_061": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_062": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_063": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_064": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_065": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_066": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_067": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_068": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_069": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_070": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_071": {
+      "unprompted_recall": false,
+      "grounding": null
+    },
+    "neg_072": {
+      "unprompted_recall": false,
+      "grounding": null
+    }
+  }
+}
