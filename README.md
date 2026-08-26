@@ -4,7 +4,9 @@
 
 ### Does your memory system actually *use* what it remembers?
 
-[![Paper](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-b31b1b)](https://github.com/ryuichi-sumida/memuse)
+[![EMNLP 2026](https://img.shields.io/badge/EMNLP%202026-Main%20Conference-4b8bbe)](https://arxiv.org/abs/2608.24189)
+[![arXiv](https://img.shields.io/badge/arXiv-2608.24189-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.24189)
+[![Paper page](https://img.shields.io/badge/%F0%9F%A4%97-Paper%20page-FFD21E)](https://huggingface.co/papers/2608.24189)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-RuiSumida%2Fmemuse-ffcc4d)](https://huggingface.co/datasets/RuiSumida/memuse)
 [![Data license](https://img.shields.io/badge/data-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Code license](https://img.shields.io/badge/code-MIT-green)](https://opensource.org/licenses/MIT)
@@ -18,6 +20,8 @@ Give a model more memory and retrieval scores soar — but natural integration *
 </div>
 
 <br>
+
+**Paper:** [arXiv:2608.24189](https://arxiv.org/abs/2608.24189) · [Hugging Face paper page](https://huggingface.co/papers/2608.24189) — **Dataset:** [RuiSumida/memuse](https://huggingface.co/datasets/RuiSumida/memuse)
 
 MemUse evaluates memory at the moments real users actually cue it — *"as I wrote yesterday…"*, *"do you remember…?"* — mined from a 4-month deployment of an AI diary companion and verified by human annotators.
 
@@ -197,6 +201,10 @@ Memory moments are rare — ~1.4% of user turns — which is exactly why they ar
   title     = {{MemUse}: Moving Memory Evaluation from Direct {QA} to Natural Integration in Long-Term Human-{AI} Conversation},
   author    = {Sumida, Ryuichi and Inoue, Koji and Kawahara, Tatsuya},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  year      = {2026}
+  year      = {2026},
+  eprint    = {2608.24189},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url       = {https://arxiv.org/abs/2608.24189}
 }
 ```
