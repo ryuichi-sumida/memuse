@@ -23,6 +23,8 @@ Give a model more memory and retrieval scores soar — but natural integration *
 
 **Paper:** [arXiv:2608.24189](https://arxiv.org/abs/2608.24189) · [Hugging Face paper page](https://huggingface.co/papers/2608.24189) — **Dataset:** [RuiSumida/memuse](https://huggingface.co/datasets/RuiSumida/memuse)
 
+We need to test whether the system actually **uses** memories in conversation — not just whether it can answer correctly when asked directly. An AI that can answer *"my dog's name is Momo"* when quizzed, but never says *"how's Momo doing?"* on its own, isn't really remembering you.
+
 MemUse evaluates memory at the moments real users actually cue it — *"as I wrote yesterday…"*, *"do you remember…?"* — mined from a 4-month deployment of an AI diary companion and verified by human annotators.
 
 > **The gap:** GPT-4.1-mini answers **78.8%** of MemUse fact questions when asked directly, yet mentions those facts in its *natural reply* just **7.9%** of the time. Same model, same context.
