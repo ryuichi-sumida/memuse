@@ -15,8 +15,8 @@
       "prompt_file": "prompts/natural_integration.txt",
       "system_prompt": "Answer ONLY 'yes' or 'no'.",
       "slots": {
-        "trigger_quote": "input.trigger_quote",
-        "ground_truth": "target.ground_truth   (truncated to the first 300 characters)",
+        "trigger_quote": "target.judge_trigger   (the cue span within input.trigger_quote, as used in the paper)",
+        "ground_truth": "target.judge_expected   (truncated to the first 300 characters; as used in the paper)",
         "response": "the system-under-test's reply to the trigger"
       },
       "yes_means": "The response demonstrates memory of the referenced topic.",
@@ -51,7 +51,7 @@
       "report": "mean(yes) across all 316 sub-questions. Together with direct_qa diagnoses the retrieval-integration gap."
     }
   },
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "negatives": {
     "file": "data/negatives.test.jsonl",
     "what": "72 user turns where NO prior-session memory is needed (memory-event detector flagged nothing in the session; GPT-5.4 prior-context-dependence score = 0), matched 1:1 to the positives (same user where possible, nearest session). Use them to measure FALSE POSITIVES: systems that assert or fabricate memory when nothing was cued.",

@@ -98,9 +98,16 @@ introduce judge bias — validate against humans before reporting
 
 ## Reproducibility notes
 
-- The Natural Integration prompt truncates `target.ground_truth` to the first
-  300 characters before substitution (matches `analysis/phase4_benchmark.py` in
-  the paper's analysis code).
+- The Natural Integration prompt is filled with `target.judge_trigger` (the cue
+  span within `input.trigger_quote`) and `target.judge_expected` (a description of
+  what a memory-integrating reply should do), truncated to 300 characters — the
+  inputs used for the paper's numbers and the human validation
+  (`analysis/phase4_benchmark.py`). Your system still replies to the full
+  `input.trigger_quote`.
+- **schema 1.2 (2026-10):** versions ≤ 1.1 filled the NI prompt with
+  `input.trigger_quote` and `target.ground_truth` instead, which makes the judge
+  far more lenient (GPT-4.1-mini summary-only: ~67% vs 24% with the paper's
+  inputs). NI scores from ≤ 1.1 are not comparable to the paper; please re-score.
 - The same prompts are used across the LLM judge and the human annotators in
   the paper's judge-validation study (Appendix).
 - `metadata.json` `schema_version` will be bumped if any prompt or judge config

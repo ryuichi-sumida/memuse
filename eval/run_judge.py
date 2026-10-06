@@ -77,8 +77,8 @@ def swap_judge(fn: JudgeFn) -> JudgeFn:
 # --- prompt construction ----------------------------------------------------
 def natural_prompt(instance: dict, response: str) -> str:
     return PROMPTS["natural_integration"].format(
-        trigger_quote=instance["input"]["trigger_quote"],
-        ground_truth=instance["target"]["ground_truth"][:300],   # paper truncation
+        trigger_quote=instance["target"]["judge_trigger"],       # paper judge inputs
+        ground_truth=instance["target"]["judge_expected"][:300],   # paper truncation
         response=response,
     )
 

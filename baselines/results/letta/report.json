@@ -1,8 +1,8 @@
 {
   "summary": {
-    "natural_integration": 0.5694,
-    "reference": 0.1076,
-    "direct_qa": 0.6139,
+    "natural_integration": 0.2917,
+    "reference": 0.1108,
+    "direct_qa": 0.6108,
     "n_instances_scored": 72,
     "n_sub_questions": 316,
     "judge_model": "gpt-5.4-nano"
@@ -21,10 +21,10 @@
       "natural_integration": true
     },
     "pos_005": {
-      "natural_integration": false
+      "natural_integration": true
     },
     "pos_006": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_007": {
       "natural_integration": true
@@ -39,13 +39,13 @@
       "natural_integration": false
     },
     "pos_011": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_012": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_013": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_014": {
       "natural_integration": true
@@ -54,19 +54,19 @@
       "natural_integration": false
     },
     "pos_016": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_017": {
       "natural_integration": true
     },
     "pos_018": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_019": {
       "natural_integration": false
     },
     "pos_020": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_021": {
       "natural_integration": false
@@ -87,10 +87,10 @@
       "natural_integration": true
     },
     "pos_027": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_028": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_029": {
       "natural_integration": true
@@ -120,25 +120,25 @@
       "natural_integration": false
     },
     "pos_038": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_039": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_040": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_041": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_042": {
       "natural_integration": true
     },
     "pos_043": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_044": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_045": {
       "natural_integration": false
@@ -159,10 +159,10 @@
       "natural_integration": true
     },
     "pos_051": {
-      "natural_integration": false
+      "natural_integration": true
     },
     "pos_052": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_054": {
       "natural_integration": true
@@ -192,10 +192,10 @@
       "natural_integration": false
     },
     "pos_063": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_064": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_065": {
       "natural_integration": false
@@ -204,22 +204,22 @@
       "natural_integration": false
     },
     "pos_067": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_068": {
       "natural_integration": true
     },
     "pos_069": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_070": {
       "natural_integration": false
     },
     "pos_071": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_072": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_073": {
       "natural_integration": false
@@ -373,7 +373,7 @@
     {
       "instance_id": "pos_006",
       "sub_q_idx": 3,
-      "reference": true,
+      "reference": false,
       "direct_qa": false
     },
     {
@@ -871,7 +871,7 @@
     {
       "instance_id": "pos_025",
       "sub_q_idx": 3,
-      "reference": true,
+      "reference": false,
       "direct_qa": false
     },
     {
@@ -883,7 +883,7 @@
     {
       "instance_id": "pos_026",
       "sub_q_idx": 1,
-      "reference": false,
+      "reference": true,
       "direct_qa": true
     },
     {
@@ -908,7 +908,7 @@
       "instance_id": "pos_027",
       "sub_q_idx": 0,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_027",
@@ -968,7 +968,7 @@
       "instance_id": "pos_029",
       "sub_q_idx": 1,
       "reference": true,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_029",
@@ -1069,7 +1069,7 @@
     {
       "instance_id": "pos_032",
       "sub_q_idx": 4,
-      "reference": true,
+      "reference": false,
       "direct_qa": false
     },
     {
@@ -1202,7 +1202,7 @@
       "instance_id": "pos_037",
       "sub_q_idx": 4,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_038",
@@ -1370,7 +1370,7 @@
       "instance_id": "pos_044",
       "sub_q_idx": 1,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_044",
@@ -1436,7 +1436,7 @@
       "instance_id": "pos_047",
       "sub_q_idx": 0,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_047",
@@ -1712,7 +1712,7 @@
       "instance_id": "pos_057",
       "sub_q_idx": 3,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_058",
@@ -1838,7 +1838,7 @@
       "instance_id": "pos_062",
       "sub_q_idx": 3,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_063",
@@ -1879,7 +1879,7 @@
     {
       "instance_id": "pos_064",
       "sub_q_idx": 2,
-      "reference": false,
+      "reference": true,
       "direct_qa": true
     },
     {
@@ -2071,7 +2071,7 @@
     {
       "instance_id": "pos_072",
       "sub_q_idx": 0,
-      "reference": false,
+      "reference": true,
       "direct_qa": true
     },
     {
@@ -2089,7 +2089,7 @@
     {
       "instance_id": "pos_072",
       "sub_q_idx": 3,
-      "reference": false,
+      "reference": true,
       "direct_qa": false
     },
     {

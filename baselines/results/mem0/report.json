@@ -1,8 +1,8 @@
 {
   "summary": {
-    "natural_integration": 0.5833,
+    "natural_integration": 0.2778,
     "reference": 0.0728,
-    "direct_qa": 0.4146,
+    "direct_qa": 0.4241,
     "n_instances_scored": 72,
     "n_sub_questions": 316,
     "judge_model": "gpt-5.4-nano"
@@ -12,13 +12,13 @@
       "natural_integration": true
     },
     "pos_002": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_003": {
       "natural_integration": false
     },
     "pos_004": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_005": {
       "natural_integration": false
@@ -30,43 +30,43 @@
       "natural_integration": true
     },
     "pos_008": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_009": {
       "natural_integration": true
     },
     "pos_010": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_011": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_012": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_013": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_014": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_015": {
       "natural_integration": false
     },
     "pos_016": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_017": {
       "natural_integration": true
     },
     "pos_018": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_019": {
       "natural_integration": true
     },
     "pos_020": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_021": {
       "natural_integration": true
@@ -87,7 +87,7 @@
       "natural_integration": true
     },
     "pos_027": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_028": {
       "natural_integration": false
@@ -105,7 +105,7 @@
       "natural_integration": false
     },
     "pos_033": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_034": {
       "natural_integration": false
@@ -120,10 +120,10 @@
       "natural_integration": false
     },
     "pos_038": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_039": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_040": {
       "natural_integration": false
@@ -132,13 +132,13 @@
       "natural_integration": false
     },
     "pos_042": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_043": {
       "natural_integration": true
     },
     "pos_044": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_045": {
       "natural_integration": false
@@ -159,10 +159,10 @@
       "natural_integration": true
     },
     "pos_051": {
-      "natural_integration": false
+      "natural_integration": true
     },
     "pos_052": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_054": {
       "natural_integration": true
@@ -177,7 +177,7 @@
       "natural_integration": false
     },
     "pos_058": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_059": {
       "natural_integration": false
@@ -189,10 +189,10 @@
       "natural_integration": true
     },
     "pos_062": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_063": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_064": {
       "natural_integration": true
@@ -210,7 +210,7 @@
       "natural_integration": true
     },
     "pos_069": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_070": {
       "natural_integration": true
@@ -219,7 +219,7 @@
       "natural_integration": true
     },
     "pos_072": {
-      "natural_integration": true
+      "natural_integration": false
     },
     "pos_073": {
       "natural_integration": false
@@ -296,7 +296,7 @@
       "instance_id": "pos_003",
       "sub_q_idx": 3,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_004",
@@ -380,7 +380,7 @@
       "instance_id": "pos_007",
       "sub_q_idx": 0,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_007",
@@ -422,7 +422,7 @@
       "instance_id": "pos_008",
       "sub_q_idx": 3,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_008",
@@ -440,13 +440,13 @@
       "instance_id": "pos_009",
       "sub_q_idx": 1,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_009",
       "sub_q_idx": 2,
       "reference": true,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_009",
@@ -602,7 +602,7 @@
       "instance_id": "pos_015",
       "sub_q_idx": 3,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_016",
@@ -794,7 +794,7 @@
       "instance_id": "pos_022",
       "sub_q_idx": 3,
       "reference": true,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_023",
@@ -914,7 +914,7 @@
       "instance_id": "pos_027",
       "sub_q_idx": 1,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_027",
@@ -1052,7 +1052,7 @@
       "instance_id": "pos_032",
       "sub_q_idx": 1,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_032",
@@ -1076,7 +1076,7 @@
       "instance_id": "pos_033",
       "sub_q_idx": 0,
       "reference": true,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_033",
@@ -1358,7 +1358,7 @@
       "instance_id": "pos_043",
       "sub_q_idx": 3,
       "reference": true,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_044",
@@ -1465,14 +1465,14 @@
     {
       "instance_id": "pos_048",
       "sub_q_idx": 0,
-      "reference": true,
+      "reference": false,
       "direct_qa": true
     },
     {
       "instance_id": "pos_048",
       "sub_q_idx": 1,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_048",
@@ -1514,7 +1514,7 @@
       "instance_id": "pos_049",
       "sub_q_idx": 4,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_050",
@@ -1532,7 +1532,7 @@
       "instance_id": "pos_050",
       "sub_q_idx": 2,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_050",
@@ -1928,7 +1928,7 @@
       "instance_id": "pos_066",
       "sub_q_idx": 2,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_066",
@@ -1940,7 +1940,7 @@
       "instance_id": "pos_067",
       "sub_q_idx": 0,
       "reference": false,
-      "direct_qa": true
+      "direct_qa": false
     },
     {
       "instance_id": "pos_067",
@@ -2011,7 +2011,7 @@
     {
       "instance_id": "pos_069",
       "sub_q_idx": 3,
-      "reference": false,
+      "reference": true,
       "direct_qa": true
     },
     {
@@ -2078,7 +2078,7 @@
       "instance_id": "pos_072",
       "sub_q_idx": 1,
       "reference": false,
-      "direct_qa": false
+      "direct_qa": true
     },
     {
       "instance_id": "pos_072",

@@ -114,14 +114,14 @@ Judge is GPT-5.4-nano at temperature 0, validated against human annotators (`swa
 | GPT-5.5 | full history | 82.9 | 13.6 | 52.1 |
 | Gemini 3.1 Pro | summary only | 37.9 | 8.2 | 32.9 |
 | Gemini 3.1 Pro | full history | 72.3 | 7.6 | 37.0 |
-| GPT-4.1-mini + **Mem0** | extract/store/retrieve | 41.5 | 7.3 | **58.3** |
-| GPT-4.1-mini + **Letta** | archival memory agent | 61.4 | 10.8 | **56.9** |
+| GPT-4.1-mini + **Mem0** | extract/store/retrieve | 42.4 | 7.3 | 27.8 |
+| GPT-4.1-mini + **Letta** | archival memory agent | 61.1 | 11.1 | 29.2 |
 
 <details>
 <summary>Negatives (false-positive) results & notes</summary>
 <br>
 
-Values in %; judge fixed at GPT-5.4-nano. Paper numbers use 73 instances; the released 72 drop one contaminated probe (≤ 1.4 pp effect). Per-instance outputs in `baselines/results/`.
+Values in %; judge fixed at GPT-5.4-nano. Paper numbers use 73 instances; the released 72 drop one contaminated probe (≤ 1.4 pp effect). Mem0/Letta Natural Integration corrected on 2026-10-07 (eval schema 1.2): the arXiv v1 values (58.3 / 56.9) were scored with judge inputs that did not match the paper's; with matched inputs they fall in the same range as the other rows. Per-instance outputs in `baselines/results/`.
 
 | system | memory | unprompted recall ↓ | **fabricated recall ↓** |
 |---|---|---:|---:|
