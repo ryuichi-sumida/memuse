@@ -20,6 +20,9 @@ so the benchmark is bit-exact reproducible without consulting the paper PDF.
   prior conversation although nothing was cued?) and *fabricated recall rate*
   (…and is that content absent from the user's real history? — the headline
   false-positive number). Responses file: `{"natural": {"neg_001": "..."}}`.
+- `human_validation/` — the paper's 56-item Natural Integration judge-validation
+  set (Appendix B.4): items with two human labels and the GPT-5.4-nano label, for
+  checking a replacement judge's agreement with humans. See its README.
 
 ## Judge — paper default
 
@@ -90,7 +93,8 @@ report = await score(instances, natural_responses, direct_qa_responses,
 ```
 
 The paper's reported numbers use the OpenAI default. Other judges may
-introduce judge bias — validate against humans before reporting.
+introduce judge bias — validate against humans before reporting
+(`human_validation/ni_pilot.jsonl` has the paper's human labels).
 
 ## Reproducibility notes
 
